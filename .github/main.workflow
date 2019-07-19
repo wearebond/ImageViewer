@@ -4,6 +4,6 @@ workflow "ESLint" {
 }
 
 action "wearebond/eslint-action" {
-  uses = "wearebond/eslint-action@e9e779b"
+  uses = "wearebond/eslint-action@076a782440564e64f79e72680ddaccc94759884e"
   secrets = ["GITHUB_TOKEN"]
 }
