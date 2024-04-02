@@ -727,11 +727,11 @@
             this.imageWrap.prepend('<img class="iv-large-image" src="' + image + '" />');
 
             if (hiResImg) {
-                this.imageWrap.append('<img class="iv-large-image" src="' + hiResImg + '" />')
+                this.imageWrap.append('<img class="iv-large-image" style="opacity:0;" src="' + hiResImg + '" />')
             }
 
             if(compare) {
-                this.imageWrap.append('<img class="iv-large-compare" src="' + compare + '" />');
+                this.imageWrap.append('<img class="iv-large-compare" style="opacity:0;" src="' + compare + '" />');
             }
 
             var currentImg = this.currentImg = this.container.find('.iv-large-image');
