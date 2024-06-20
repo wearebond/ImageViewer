@@ -1,8 +1,9 @@
 workflow "ESLint" {
-  resolves = ["gimenete/eslint-action"]
+  resolves = ["wearebond/eslint-action"]
   on = "push"
 }
 
-action "gimenete/eslint-action" {
-  uses = "gimenete/eslint-action@1bbfd5ba0d9e42a04050fa38f6b4eeeacabd9574"
+action "wearebond/eslint-action" {
+  uses = "wearebond/eslint-action@076a782440564e64f79e72680ddaccc94759884e"
+  secrets = ["GITHUB_TOKEN"]
 }
